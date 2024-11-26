@@ -1,16 +1,9 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
 name: Bug Report
-description: Use this to report bugs.
-title: "[Bug]: "
-labels: ["bug"]
+description: Use this template to report bugs.
+title: "[Bug]: " 
+labels:
+  - bug  
+
 body:
   - type: input
     id: title
@@ -40,6 +33,8 @@ body:
         - macOS
         - Windows
         - Other
+    validations:
+      required: true
 
   - type: input
     id: browser
@@ -53,7 +48,7 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Anything Else to add?
+      label: Anything Else to Add?
       description: Paste any relevant information here.
       render: shell
       placeholder: Paste any relevant info here.
